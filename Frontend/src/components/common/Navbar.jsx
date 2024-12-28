@@ -79,12 +79,12 @@ const Navbar = () => {
                   >
                     Your Account
                   </Link>
-                  <a
-                    href="#orders"
+                  <Link
+                    to="/order"
                     className="block  hover:text-theme hover:underline text-gray-600 text-sm"
                   >
                     Your Orders
-                  </a>
+                  </Link>
                   <Link className="block  hover:text-theme hover:underline text-gray-600 text-sm">
                     Explore
                   </Link>
@@ -121,12 +121,12 @@ const Navbar = () => {
                     >
                       Your Account
                     </a>
-                    <a
-                      href="#orders"
+                    <Link
+                      to="/order"
                       className="block  hover:text-theme hover:underline text-gray-600 text-sm"
                     >
                       Your Orders
-                    </a>
+                    </Link>
                     <Link className="block  hover:text-theme hover:underline text-gray-600 text-sm">
                       Explore
                     </Link>

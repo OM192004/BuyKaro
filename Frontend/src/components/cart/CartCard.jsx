@@ -13,20 +13,18 @@ const CartCard = ({
 }) => {
   return (
     <div className="flex items-start border-b border-gray-200 py-4">
-      {/* Checkbox */}
+      
       <input
         type="checkbox"
         className="h-5 w-5 mt-2 mr-4 accent-theme1 "
       />
-
-      {/* Product Image */}
       <img
         src={image}
         alt={title}
         className="w-24 h-24 object-cover rounded-md mr-4"
       />
 
-      {/* Product Details */}
+      
       <div className="flex-grow">
         <h2 className="text-lg font-medium text-gray-800">{title}</h2>
         <p className="text-gray-500 text-sm">
@@ -43,7 +41,6 @@ const CartCard = ({
 
     
       <div className="ml-4 text-right flex flex-col ">
-        {/* Quantity Control */}
         <div className=" ml-10 flex items-center border rounded-md w-fit">
           <button
             className="px-2 py-1 bg-gray-200 hover:bg-gray-300"
@@ -58,7 +55,7 @@ const CartCard = ({
           </button>
         </div>
 
-        {/* Action Buttons */}
+        
         <div className="mt-2 text-sm text-gray-500 mr-10">
           <button
             className=" text-red-600 hover:text-red-800"

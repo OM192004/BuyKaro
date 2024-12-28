@@ -11,7 +11,7 @@ function YourAccount() {
         <div className='w-fit mx-72 mt-10 mb-20'>
             <h1 className='text-2xl mb-4 font-semibold'>Your Account</h1>
             <div className='flex flex-wrap  gap-7'>
-                <Link className='p-2 border-2 border-gray-300 gap-3 rounded-md w-72 h-24 flex items-center pb-4 hover:bg-gray-100'>
+                <Link to="/order" className='p-2 border-2 border-gray-300 gap-3 rounded-md w-72 h-24 flex items-center pb-4 hover:bg-gray-100'>
                     <FaBoxArchive size={35} className='text-yellow-300 ' />
                     <div>
                         <p className='text-lg '>Your Orders</p>
@@ -26,7 +26,7 @@ function YourAccount() {
                         <p className='text-gray-700 text-sm'>Edit login ,name and password.</p>
                     </div>
                 </Link>
-                <Link className='p-2 border-2 border-gray-300 gap-3 rounded-md w-72 h-24 flex items-center pb-4 hover:bg-gray-100'>
+                <Link to="/youraddress" className='p-2 border-2 border-gray-300 gap-3 rounded-md w-72 h-24 flex items-center pb-4 hover:bg-gray-100'>
                     < MdLocationPin size={40} className='text-orange-400' />
                     <div>
                         <p className='text-lg'>Your Address</p>
@@ -40,7 +40,7 @@ function YourAccount() {
                         <p className='text-gray-700 text-sm'>Edit or add payment methods.</p>
                     </div>
                 </Link>
-                <Link className='p-2 border-2 border-gray-300 gap-3 rounded-md w-72 h-24 flex items-center pb-4 hover:bg-gray-100'>
+                <Link to="/contactus" className='p-2 border-2 border-gray-300 gap-3 rounded-md w-72 h-24 flex items-center pb-4 hover:bg-gray-100'>
                     <MdHeadsetMic size={40} className='text-green-300'/>
                     <div>
                         <p className='text-lg'>Contact Us</p>

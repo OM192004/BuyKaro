@@ -34,7 +34,7 @@ const ProductDetailPage = () => {
   ];
 
   return (
-    <div className="p-6 bg-white min-h-screen mx-10">
+    <div className="p-6 bg-white  mx-10">
       <div className="flex gap-8 ">
         
         <div className="flex gap-4 p-4 bg-white shadow-sm rounded h-fit">
@@ -129,7 +129,6 @@ const ProductDetailPage = () => {
               <p className="text-sm text-gray-700">Secure transaction</p>
             </div>
           </div>
-          <div className="h-[2px] w-full bg-gray-300 rounded-xl"></div>
         </div>
 
 
@@ -182,10 +181,10 @@ const ProductDetailPage = () => {
 
           {/* Buttons */}
           <div className="flex flex-col gap-2 ">
-            <button className="px-4 py-2 bg-yellow-300 w-full  rounded-lg hover:bg-yellow-600">
+            <button className="px-4 py-2 bg-yellow-300 w-full transition duration-500 rounded-lg hover:bg-yellow-600">
               Add to Cart
             </button>
-            <button className="px-4 py-2 bg-orange-400 w-full   rounded-lg hover:bg-orange-600">
+            <button className="px-4 py-2 bg-orange-400 w-full  transition duration-500 rounded-lg hover:bg-orange-600">
               Buy Now
             </button>
           </div>
@@ -196,3 +195,57 @@ const ProductDetailPage = () => {
 };
 
 export default ProductDetailPage;
+
+// import React from "react";
+// import OrderCard from "./OrderCard";
+
+// const OrderList = () => {
+//   const orders = [
+//     {
+//       date: "19 June 2024",
+//       total: "1,299.00",
+//       shipTo: "Om Mali",
+//       productImage:
+//         "https://m.media-amazon.com/images/I/71MHneGDeqL._AC_UL320_.jpg",
+//       productName:
+//         "Boult Audio India's #1 Rated Audio Brand Z40 Earbuds with 60H Battery",
+//       returnDate: "1 July 2024",
+//     },
+//     // Add more orders here
+//   ];
+
+//   return (
+//     <div className="bg-gray-50 min-h-screen p-6">
+//       {/* Breadcrumb */}
+//       <div className="text-sm text-gray-500 mb-4">
+//         <span className="hover:text-blue-500 cursor-pointer">Your Account</span>{" "}
+//         &gt;{" "}
+//         <span className="text-gray-800 font-semibold">Your Orders</span>
+//       </div>
+
+//       {/* Title */}
+//       <h1 className="text-2xl font-bold mb-6">Your Orders</h1>
+
+//       {/* Orders List */}
+//       {orders.length > 0 ? (
+//         orders.map((order, index) => (
+//           <OrderCard key={index} order={order} />
+//         ))
+//       ) : (
+//         <div className="text-center mt-10 text-gray-600">
+//           <p className="text-lg font-medium">
+//             0 orders placed in the last 30 days
+//           </p>
+//           <p className="mt-2">
+//             Looks like you have not placed an order in the last 30 days.{" "}
+//             <a href="#" className="text-blue-500 hover:underline">
+//               View orders in past 3 months
+//             </a>
+//           </p>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default OrderList;
