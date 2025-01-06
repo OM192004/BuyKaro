@@ -5,7 +5,6 @@ const CartCard = ({
   title,
   seller,
   price,
-  mrp,
   quantity,
   onIncrease,
   onDecrease,
@@ -32,7 +31,6 @@ const CartCard = ({
         </p>
         <div className="flex items-center mt-2">
           <span className="text-red-500 font-semibold text-xl">₹{price}</span>
-          <span className="text-gray-500 line-through text-sm ml-3">₹{mrp}</span>
           <span className="ml-2 text-sm bg-red-100 text-red-600 px-2 py-1 rounded-full">
             Limited time deal
           </span>
