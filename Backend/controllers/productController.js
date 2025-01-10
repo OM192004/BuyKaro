@@ -73,23 +73,28 @@ const addProduct = async (req, res) => {
 const getProducts = async (req, res) => {
     try {
         const { search } = req.query;
-        console.log(req.query);
-        const query = {};
+        let query = {};
+    
         if (search) {
-            query.category = { $regex: search, $options: 'i' };
-        }
-
-        const products = await Product.find(query);
-
+            query = {
+                $or: [
+                    { productName: { $regex: search, $options: 'i' } },
+                    { category: { $regex: search, $options: 'i' } }
+                ]
+            };
+        }    
+      const products = await Product.find(query);
+    
         if (products.length === 0) {
             return res.status(200).json({ message: "No products found" });
         }
-
+    
         res.status(200).json(products);
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({ message: 'Error fetching products', error: err.message });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: "An error occurred while fetching products" });
     }
+    
 };
 
 
