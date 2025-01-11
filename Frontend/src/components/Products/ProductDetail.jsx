@@ -4,6 +4,7 @@ import { MdLocationPin } from "react-icons/md";
 import { useNavigate } from "react-router";
 import Footer from "../common/Footer";
 import Navbar from "../common/Navbar";
+import ReviewList from "../../pages/ReviewPage";
 
 const ProductDetailPage = () => {
   const { id } = useParams();
@@ -83,7 +84,7 @@ const ProductDetailPage = () => {
       <div className="p-6 bg-white mx-10">
         <div className="flex gap-8">
           <div className="flex gap-4 p-4 bg-white shadow-sm rounded h-fit">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 h-fit bg-gray-400">
               {product.images.map((image, index) => (
                 <img
                   key={index}
@@ -241,6 +242,7 @@ const ProductDetailPage = () => {
           </div>
         </div>
       </div>
+      <ReviewList />
       <Footer />
     </div>
   );
